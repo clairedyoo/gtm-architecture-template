@@ -1,0 +1,760 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "brand-review",
+      "group": "Visuals",
+      "description": "Review a rendered graphic or visual system for message clarity, identity consistency and export quality; make fixes when requested.",
+      "path": ".agents/skills/brand-review/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/brand-review/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "brand-system",
+      "group": "Visuals",
+      "description": "Establish or update a client's visual identity, reusable tokens and graphic conventions from their preferences and supplied assets.",
+      "path": ".agents/skills/brand-system/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/brand-system/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "capture-context",
+      "group": "Context",
+      "description": "Turn supplied interviews, notes, writing samples and other source material into linked author context with traceable evidence.",
+      "path": ".agents/skills/capture-context/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/capture-context/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "content-strategy",
+      "group": "Content",
+      "description": "Define an author's content pillars, topics, subtopics and funnel roles from their audience, evidence, goals and offer.",
+      "path": ".agents/skills/content-strategy/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/content-strategy/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "crm-presync-check",
+      "group": "GTM",
+      "description": "Check an OXYGEN cohort against the connected CRM and produce existing, new, ambiguous or failed lookup decisions before a sync.",
+      "path": ".agents/skills/crm-presync-check/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/crm-presync-check/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "flowchart",
+      "group": "Visuals",
+      "description": "Create editable flowcharts, system maps and funnels with semantic icons, structured operation cards, distinct skill and decision shapes, and verified routing.",
+      "path": ".agents/skills/flowchart/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/flowchart/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "graphics-designer",
+      "group": "Visuals",
+      "description": "Create an individual graphic, carousel or banner using the client's supplied visual rules, or a neutral unbranded layout when requested.",
+      "path": ".agents/skills/graphics-designer/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/graphics-designer/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        },
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/graphics-designer/SKILL.md",
+          "treatment": "merged into generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "gtm-start",
+      "group": "Start",
+      "description": "Set up the GTM Architecture kit and guide a first ten-account pilot, using the offline demo, company brief, skills and hosted functions.",
+      "path": ".agents/skills/gtm-start/SKILL.md",
+      "sources": []
+    },
+    {
+      "name": "launch-video",
+      "group": "Media",
+      "description": "Create a product launch video from a truthful beat script, available assets and a reproducible motion project.",
+      "path": ".agents/skills/launch-video/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/launch-video/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "lead-magnet-creator",
+      "group": "Content",
+      "description": "Build a complete, reusable lead magnet with a clear reader outcome, worked example, editable starting point and tested delivery path.",
+      "path": ".agents/skills/lead-magnet-creator/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/lead-magnet-creator/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "lead-sourcing",
+      "group": "GTM",
+      "description": "Translate an ICP into comparable account and contact searches, build a bounded first batch and preserve provider filters and provenance.",
+      "path": ".agents/skills/lead-sourcing/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/lead-sourcing/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "linkedin-copywriter",
+      "group": "Content",
+      "description": "Draft or edit one LinkedIn post using the author's context, writing samples, factual sources and intended funnel job.",
+      "path": ".agents/skills/linkedin-copywriter/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/linkedin-copywriter/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        },
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/linkedin-copywriter/SKILL.md",
+          "treatment": "merged into generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "long-form",
+      "group": "Content",
+      "description": "Turn a sourced idea into an article or essay with a clear argument, useful examples and traceable factual claims.",
+      "path": ".agents/skills/long-form/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/long-form/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "manim-video",
+      "group": "Media",
+      "description": "Create an explanatory animation in Manim from a precise concept, scene plan and verified local renderer.",
+      "path": ".agents/skills/manim-video/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/video-use/skills/manim-video/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "newsletter-writer",
+      "group": "Content",
+      "description": "Write a useful newsletter issue from source material, the author's voice and one coherent reader takeaway.",
+      "path": ".agents/skills/newsletter-writer/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/newsletter-writer/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "outbound-copywriter",
+      "group": "GTM",
+      "description": "Write a grounded first touch or follow-up from the buyer's situation, a real offer, cleared proof and the sender's own voice.",
+      "path": ".agents/skills/outbound-copywriter/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/gtm-vault",
+          "revision": "12accb49fb765597537768466b8bf7c59af250c0",
+          "path": "skills/outbound-copywriter/SKILL.md",
+          "treatment": "rewritten for current kit; client data and stale commands removed"
+        },
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/outbound-copywriter/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-dedupe",
+      "group": "GTM",
+      "description": "Review duplicate companies, people and source events before ingestion while preserving provenance and holding uncertain identity matches.",
+      "path": ".agents/skills/oxygen-dedupe/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/oxygen-dedupe/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-deliverability",
+      "group": "OXYGEN",
+      "description": "Diagnose OXYGEN sender health from bounce, authentication, warmup and run evidence, then apply only the requested bounded remediation.",
+      "path": ".agents/skills/oxygen-deliverability/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-deliverability --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "219186ce9b41c9c8aa3238c3c1dc922fad7630d181897fe0351c6af332eacdcf",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-diagnostics",
+      "group": "OXYGEN",
+      "description": "Trace OXYGEN cells and runs, explain failures or credit spend, and plan reconciled retries from native provenance.",
+      "path": ".agents/skills/oxygen-diagnostics/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-diagnostics --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "fa131101d22d543dab0e6f06711ef8558b485a28f15ddf71453a10ce2e1ca1f5",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-email-infra",
+      "group": "OXYGEN",
+      "description": "Set up and inspect OXYGEN sender profiles, domains, mailboxes, authentication, warmup and Sequence attachment using native previews.",
+      "path": ".agents/skills/oxygen-email-infra/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-email-infra --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "74d3300c05638e67c928e32a2c11d4a223b5f16c6638876f5059ab34151b3e6f",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-gtm",
+      "group": "OXYGEN",
+      "description": "Route a GTM outcome to the correct OXYGEN primitive and select the narrower bundled skill for hosted execution.",
+      "path": ".agents/skills/oxygen-gtm/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-gtm --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "e35c2fcac5fca50549d7e5c88748d98b91bf7f4c408db4076a0521617c3bb158",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-knowledge",
+      "group": "OXYGEN",
+      "description": "Read and maintain OXYGEN Knowledge pages, sources, revisions and approved context so GTM functions use traceable company knowledge.",
+      "path": ".agents/skills/oxygen-knowledge/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-knowledge --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "0311432ca5cce6330c5dfd10f65a24db9e7cde56c84b019d1bf40b1aea545413",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-linkedin-marketing",
+      "group": "OXYGEN",
+      "description": "Run OXYGEN LinkedIn content and warm-signal motions through Posts, Publishing, Signals, Tables and bounded Sequences.",
+      "path": ".agents/skills/oxygen-linkedin-marketing/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-linkedin-marketing --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "7b2fc6139875e6ce9eb4a34724f2838a54cf415719a07d9c465863f6d0ce2cc3",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-quickstart",
+      "group": "OXYGEN",
+      "description": "Connect this kit to an OXYGEN workspace, inspect capabilities and complete a small hosted demonstration without paid execution.",
+      "path": ".agents/skills/oxygen-quickstart/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-quickstart --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "ee8b12bd5a9da3c0b3392af996692e54b8a5b897df4db565e222474dc88c85ef",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-recipes",
+      "group": "OXYGEN",
+      "description": "Find and inspect a versioned OXYGEN business play, preflight its resources and adapt it to the reader's GTM goal.",
+      "path": ".agents/skills/oxygen-recipes/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-recipes --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "7041428b88f70338bf769985bf658521681af2c06a01ac9fb6a107836346864c",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-sequencer",
+      "group": "OXYGEN",
+      "description": "Operate native OXYGEN Sequences for new conversations and outreach cadence, including sender readiness, previews, enrollment, dispatch and recovery.",
+      "path": ".agents/skills/oxygen-sequencer/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-sequencer --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "a9218e1d989b1acad44ad65a226c2da37f45a575556329bc85a33cb07d595f4f",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-sequencer-enroll",
+      "group": "GTM",
+      "description": "Prepare a reviewed, verified cohort for a native OXYGEN Sequence and execute only the user's authorized enrollment and sending scope.",
+      "path": ".agents/skills/oxygen-sequencer-enroll/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/gtm-vault",
+          "revision": "12accb49fb765597537768466b8bf7c59af250c0",
+          "path": "skills/oxygen-sequencer-enroll/SKILL.md",
+          "treatment": "rewritten for current kit; client data and stale commands removed"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-table-tidy",
+      "group": "OXYGEN",
+      "description": "Inspect and improve OXYGEN Table structure, visibility and formatting while preserving raw data, dependencies and record identity.",
+      "path": ".agents/skills/oxygen-table-tidy/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-table-tidy --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "c1301fd059465976e660ab7d1bc92ee1490879e4c992b74be89c69cfd9bbd4e0",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-unibox",
+      "group": "OXYGEN",
+      "description": "Triage OXYGEN Messages and Unibox conversations, prepare grounded replies and send only within the user's specified account and thread scope.",
+      "path": ".agents/skills/oxygen-unibox/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-unibox --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "88422c7caae2c30178293bd1226e14896bf781a6beb248db8cdeeb8f35a8ca2b",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "oxygen-workflow-authoring",
+      "group": "OXYGEN",
+      "description": "Author, validate and operate deterministic OXYGEN Workflows with explicit inputs, hosted runs, current schemas and inspectable effects.",
+      "path": ".agents/skills/oxygen-workflow-authoring/SKILL.md",
+      "sources": [
+        {
+          "distribution": "OXYGEN CLI skill catalog",
+          "command": "oxygen skills get oxygen-workflow-authoring --json",
+          "retrieved": "2026-09-14",
+          "cli_version": "1.927.2",
+          "source_content_sha256": "3a4bff0ccc578d61facf353dfc3cdb6934edfcb7ff4bb9a2b6f4eb6274b260bd",
+          "treatment": "adapted for this kit; private provenance markers, vendor runbooks and unavailable local references excluded"
+        }
+      ]
+    },
+    {
+      "name": "personalize-ai-column",
+      "group": "GTM",
+      "description": "Configure and preview the kit's generated first-touch callable using cited row evidence, a frozen experiment and an explicit credit ceiling.",
+      "path": ".agents/skills/personalize-ai-column/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/gtm-vault",
+          "revision": "12accb49fb765597537768466b8bf7c59af250c0",
+          "path": "skills/personalize-ai-column/SKILL.md",
+          "treatment": "rewritten for current kit; client data and stale commands removed"
+        }
+      ]
+    },
+    {
+      "name": "qmd",
+      "group": "Context",
+      "description": "Search and retrieve this repository's author context with optional qmd, using an isolated index for each client folder.",
+      "path": ".agents/skills/qmd/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/qmd/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "repurpose-content",
+      "group": "Content",
+      "description": "Turn an interview, newsletter, talk or other long source into distinct content pieces or visual briefs while preserving its facts and voice.",
+      "path": ".agents/skills/repurpose-content/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/repurpose-content/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        },
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/repurpose/SKILL.md",
+          "treatment": "merged into generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "researcher",
+      "group": "Content",
+      "description": "Research a content or GTM question using primary evidence and return a source-backed brief with implications and open questions.",
+      "path": ".agents/skills/researcher/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/researcher/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "setup-workspace",
+      "group": "Context",
+      "description": "Initialize this content workspace for a new author, including local preferences and optional Notion or local search setup.",
+      "path": ".agents/skills/setup-workspace/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/setup-workspace/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "shorts-audio",
+      "group": "Media",
+      "description": "Improve recorded speech using measured levels, restrained noise treatment and listening comparisons against the source.",
+      "path": ".agents/skills/shorts-audio/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/shorts-audio/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "shorts-cut",
+      "group": "Media",
+      "description": "Select complete takes and remove false starts or dead air while preserving speech meaning and word boundaries.",
+      "path": ".agents/skills/shorts-cut/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/shorts-cut/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "shorts-edit",
+      "group": "Media",
+      "description": "Turn raw talking-head recordings into finished shorts using reviewed take selection, audio, captions, cue-based graphics and final QA.",
+      "path": ".agents/skills/shorts-edit/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/shorts-edit/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "shorts-motion",
+      "group": "Media",
+      "description": "Add readable, cue-aligned graphics to a short without obscuring the speaker, captions or the meaning of the footage.",
+      "path": ".agents/skills/shorts-motion/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/shorts-motion/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "shorts-qa",
+      "group": "Media",
+      "description": "Verify an edited video for complete speech, correct captions, synchronized graphics, audio integrity, image quality and playback.",
+      "path": ".agents/skills/shorts-qa/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/shorts-qa/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "signals-sweep",
+      "group": "GTM",
+      "description": "Collect a bounded batch of hiring, engagement or other account signals with source dates, deduplication and explicit qualification rules.",
+      "path": ".agents/skills/signals-sweep/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/signals-sweep/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "spin-tags",
+      "group": "GTM",
+      "description": "Add optional wording variants to static copy using the actual sender's supported syntax while preserving meaning, merge variables and experiment control.",
+      "path": ".agents/skills/spin-tags/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/spin-tags/SKILL.md",
+          "treatment": "generalized procedure; unsupported deliverability claims and sender assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "split-test-designer",
+      "group": "GTM",
+      "description": "Define one interpretable outbound experiment with frozen account-level assignment, copy versions and outcome measures.",
+      "path": ".agents/skills/split-test-designer/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/client-template",
+          "revision": "0244c4e34e2f184197a1e7d32cb72f37af0c1110",
+          "path": ".claude/skills/split-test-designer/SKILL.md",
+          "treatment": "generalized procedure; private examples and old API assumptions removed"
+        }
+      ]
+    },
+    {
+      "name": "video-use",
+      "group": "Media",
+      "description": "Edit a supplied video through a source-preserving transcript, timeline and visual review workflow using available rendering tools.",
+      "path": ".agents/skills/video-use/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/video-use/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "voice-calibration",
+      "group": "Context",
+      "description": "Build or refine an author's writing guide from their own writing samples and edits, without importing another creator's voice.",
+      "path": ".agents/skills/voice-calibration/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/voice-calibration/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "week-posts",
+      "group": "Content",
+      "description": "Plan and draft a week of content using the author's configured pillars, source material, voice, cadence and optional Notion board.",
+      "path": ".agents/skills/week-posts/SKILL.md",
+      "sources": [
+        {
+          "repo": "OXYGEN-CRO/content-engine-template",
+          "revision": "17eb37ada46ceb2193f76eaae3658b230ed4a56d",
+          "path": ".agents/skills/week-posts/SKILL.md",
+          "treatment": "adapted context paths; retained generic procedure"
+        }
+      ]
+    },
+    {
+      "name": "x-copywriter",
+      "group": "Content",
+      "description": "Draft concise X posts or threads from grounded source material and the author's actual voice.",
+      "path": ".agents/skills/x-copywriter/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/x-copywriter/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "youtube-description",
+      "group": "Media",
+      "description": "Create a YouTube description, resource links and chapters from the actual final video or timestamped transcript.",
+      "path": ".agents/skills/youtube-description/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/youtube-description/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "youtube-publisher",
+      "group": "Media",
+      "description": "Upload or update a video on the user's confirmed YouTube channel with verified metadata, processing state and requested visibility.",
+      "path": ".agents/skills/youtube-publisher/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/youtube-publisher/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "youtube-script",
+      "group": "Media",
+      "description": "Write a recordable YouTube script with a clear viewer promise, evidence, demo beats and a truthful payoff.",
+      "path": ".agents/skills/youtube-script/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/youtube-script/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    },
+    {
+      "name": "youtube-thumbnail",
+      "group": "Media",
+      "description": "Design a legible YouTube thumbnail whose visual promise is supported by the actual video.",
+      "path": ".agents/skills/youtube-thumbnail/SKILL.md",
+      "sources": [
+        {
+          "repo": "timscheuerai/content-vault",
+          "revision": "848abc38d4b733ebf704f5c5ff8486f3e2908412",
+          "path": "skills/youtube-thumbnail/SKILL.md",
+          "treatment": "rewritten portable procedure; no missing helper claims"
+        }
+      ]
+    }
+  ]
+}

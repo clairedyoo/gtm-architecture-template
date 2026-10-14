@@ -1,0 +1,19 @@
+name: Template checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run build
+      - run: npm test
+      - run: npm run check:kit
+      - run: npm run check:context
+      - run: npm run demo
+      - run: npm run skills:claude
+      - run: git diff --exit-code -- workflows blueprints docs/skills.md
