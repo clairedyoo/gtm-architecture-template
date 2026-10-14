@@ -1,0 +1,46 @@
+# Validation — 2026-09-14
+
+Validated using `oxygen-dev` CLI 1.927.2 against the OXYGEN dev API 1.978.2/1.978.3. The CLI reported compatible version skew. Production was not exercised.
+
+| Check | Result |
+|---|---|
+| Local contract and behaviour tests | 18 passed, including generated workflow code, demo acceptance and non-destructive skill discovery |
+| Function setup in dev | Seven callable backing tables registered; six workflows installed disabled |
+| Hosted deterministic runs | All six completed in `dry_run`; each returned a zero-credit receipt with no paid provider calls or external writes |
+| Portable blueprint preflight | Passed with no issues, using explicit references to the tables already installed by setup |
+| Company scoring preview | Rendered a synthetic row's evidence and rubric into the actual prompt |
+| First-touch preview | Rendered the supplied evidence, fixed CTA and experiment IDs |
+| Company research preview | Resolved the research column with web grounding enabled |
+| Email-waterfall preview | Resolved the native enrichment definition and current credit estimate |
+| Callable composition | Bound company scoring to a separate working table and previewed its mapped input/output callback |
+
+The preview exposed that an initial 20-credit callable ceiling was below the dev estimate. The shipped configurable ceiling is 100 credits per item. This is a cap, not a price promise; inspect your destination's current one-row estimate before choosing a live cap.
+
+The examples checked these behaviours in the hosted runtime: stable variant assignment, source deduplication with both signals retained, separate company/persona qualification, bounded ranking, an unreviewed message held from handoff, and cohort results requiring review. Local tests additionally cover stale/future timestamps, high scores with disqualifications, suppressed contacts, duplicate events, orphan outcomes and conflicting experiment metadata.
+
+## Not tested live
+
+No model generation, web research, email discovery, verification or outbound delivery was executed. The ten-company expected-score fixture is a calibration target, not an observed model result. Before releasing a campaign, replace examples with real reviewed inputs and run a small paid pilot under your chosen cap.
+
+No native Sequence is installed or connected by this kit. Provider-event normalisation, source acquisition and the complete cross-function orchestration remain specific to the motion you build. See [composition.md](composition.md).
+
+Reproduce the local checks with `npm run build`, `npm test`, `npm run check:kit` and `npm run check:context` (Python 3). Reproduce installation, examples and previews with [the OXYGEN setup guide](oxygen-setup.md). Workspace IDs and run receipts are kept locally under `.oxygen/` and are excluded from the public template.
+
+## Consolidated kit · v0.2.0
+
+- All 42 skills passed frontmatter validation; the package check covers catalog consistency, local Markdown links and the shared Claude discovery path.
+- The 19 blank context pages passed the context structure/link check.
+- The default offline demo produced 10 unique accounts, 5 selected accounts, 4 qualified contacts and no ready messages. Capacity changes preserved assignment stability. The committed sample report matches generated output.
+- The Claude link helper was tested for initial setup, repeated setup, a ZIP text placeholder and preservation of unrelated existing files/directories.
+- Skill procedures were reviewed for private client examples, machine paths, stale prices and missing-script claims. The copied flowchart helpers are portable Python source; visual rendering still requires an editor and inspection.
+
+These are package and deterministic behavior checks. They do not claim end-to-end execution of all 42 skills, successful model calibration, video rendering, provider provisioning, content publishing or a live outbound pilot. The hosted function definitions are unchanged from v0.1.0's dev validation above.
+
+## OXYGEN expansion · v0.3.0
+
+- All 51 current skills passed frontmatter validation and package checks after the three vendor-specific skills were removed and twelve OXYGEN skills added.
+- The new procedures were adapted from live `skills get` results using CLI 1.927.2 against dev API 1.978.7. Referenced command descriptors for Knowledge, Recipes, workflow schemas, skill retrieval and table tidy were inspected without running paid work.
+- Private provenance markers, signed access URLs and unbundled vendor runbook references were excluded from the public skills and catalog. The catalog retains hashes of the source content after its workspace marker is removed.
+- All 18 tests, the 19-page context check, offline demo and shared Claude discovery check passed. Function sources and generated hosted definitions remain unchanged.
+
+This release verifies the package and current discovery surfaces. It does not claim live execution of the added operational skills or a completed outbound campaign.
